@@ -1,0 +1,127 @@
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Establecer una fuente por defecto */
+}
+
+/* Fondo de la sección */
+.fondo {
+    background-image: url(../img/espHeader.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+}
+
+/* Animación de entrada del título */
+.espTitulo {
+    padding-top: 15vh;
+    font-size: 4.5rem;
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards 0.5s; /* Fade-in con retraso */
+}
+
+/* Sección de especialidades usando flexbox */
+.especialidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    animation: slideUp 1s ease-out; /* Animación de desplazamiento */
+}
+
+/* Animación de entrada del contenedor de especialidades */
+.espContenedor {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards; /* Animación de entrada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+/* Animación de deslizamiento hacia arriba */
+@keyframes fadeInUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Efecto hover en los contenedores */
+.espContenedor:hover {
+    transform: translateY(-10px); /* Eleva ligeramente el contenedor */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Estilos de la imagen dentro del contenedor */
+.espContenedor img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Transición de imagen */
+}
+
+/* Efecto hover en la imagen */
+.espContenedor:hover img {
+    transform: scale(1.1); /* Escala la imagen al pasar el mouse */
+}
+
+/* Estilos del nombre de la especialidad */
+.nombreEsp {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 0.5s;
+}
+
+/* Estilos del párrafo de la especialidad */
+.parrafoEsp {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Animación de aparición de texto */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .espTitulo {
+        font-size: 3.5rem;
+    }
+
+    .especialidades {
+        justify-content: space-between; /* Espaciado entre elementos en tabletas */
+    }
+}
+
+@media (max-width: 480px) {
+    .espTitulo {
+        font-size: 2.5rem;
+    }
+
+    .especialidades {
+        justify-content: center; /* Centrar elementos en dispositivos móviles */
+    }
+}

@@ -1,0 +1,81 @@
+body{
+    background-color: #F2F2F2;
+}
+.fondo{
+    grid-template-columns: 6fr 6fr;
+    place-items: center;
+    align-items:center;
+}
+.biTexto{
+    margin:2.5rem 0 0 3rem;
+    
+}
+.biTitulo{
+    font-size: 70px;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 700;
+}
+.lema{
+    padding: 2rem 0;
+    font-size:20px;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 500;
+}
+.fondo_imagen{
+    height: 550px;
+    width: auto;
+}
+.fondo_imagen img{
+    width: 100%;
+    height: 100%;
+    padding-right: 3rem;
+}
+.container{
+    margin: 3rem 0;
+}
+.liTitulo{
+    padding: 2rem;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 600;
+}
+.libros{
+    padding: 3rem 0;
+}
+.libros_lista {
+    display: flex;
+    flex-wrap: wrap;              
+    gap: 20px;                    
+    justify-content: center;      
+    transition: gap 0.3s ease-in-out;  
+}
+
+.libro {
+    width: 200px;                 
+    height: auto;                 
+    text-align: center;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.libro img {
+    width: 100%;                  
+    height: auto;                 
+    border-radius: 8px;           
+}
+
+.libro:hover {
+    transform: scale(1.05);       
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .libro {
+        width: 150px;  /* Reducir el ancho de los libros en pantallas pequeñas */
+    }
+}
+
+/* Para pantallas más grandes (tabletas y escritorios) */
+@media (min-width: 769px) {
+    .libro {
+        width: 200px;  /* Mantener el tamaño original en pantallas más grandes */
+    }
+}

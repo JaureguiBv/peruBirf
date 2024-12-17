@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+
+.fondo {
+    background-image: url('../img/fondoIndex.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    height: 630px;
+}
+
+.content{
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+}
+
+
+.corusel_jornada img{
+    padding-top: 2rem;
+    width: 260px;
+    
+}
+.content_text{
+    display: grid;
+    padding-left: 3.5rem;
+}
+.texto{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    padding: 3rem 0rem;
+    line-height: 1.4;
+    width: 98%;
+    color: white;
+}
+.btn1{
+    padding: 7px 0;
+    margin-bottom: 2rem;
+    width: 200px;
+}
+
+/* Contenedor principal */
+.contenedorMixto {
+    background-color: #F0FBFC;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto Hover en Contenedor */
+.contenedorMixto:hover {
+    transform: translateY(-8px);
+    background-color: #06BBCC;
+}
+
+/* Estilo del Icono */
+.icono {
+    color: #06BBCC;
+    padding: 15px;
+    border-radius: 50%;
+    transition: color 0.3s ease;
+}
+
+.contenedorMixto:hover .icono {
+    color: #F0FBFC;
+}
+
+/* Títulos */
+.tituloMixto {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #343a40;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+/* Hover: Cambiar color del título */
+.contenedorMixto:hover .tituloMixto {
+    color: #F0FBFC;
+}
+
+/* Párrafos */
+.parrafoMixto {
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.contenedorMixto:hover .parrafoMixto {
+    color: #F0FBFC;
+}
+
+.enlace {
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: all 0.4s ease; /* Aplica una transición suave a todos los cambios */
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000000;
+}
+
+.enlace:hover {
+    background-color: #F0FBFC; /* Color del fondo en hover */
+    color: #06BBCC; /* Cambia el color del texto */
+    transform: translateY(-5px); /* Efecto de elevación */
+    border-color: #06BBCC; /* Cambia el color del borde */
+}
+
+.enlace i {
+    margin-left: 8px;
+}
+
+
+.biblioteca{
+    background-image: url('../img/fondoBiblioteca.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 2rem;
+}
+.biblioteca__texto {
+    height: 500px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px; 
+}
+.titulo__biblioteca{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    color: #F2F2F2;
+    padding: 1rem 0;
+}
+.parrafo__biblioteca{
+    width: 80%;
+    padding: 1rem 0;
+    font-family: 'Opens Sans', sans-serif;
+    color: darkgray;
+}
+.btn__biblioteca{
+    margin: 2rem 0;
+}
+
+.evento {
+    margin: 3rem 0;
+    display:grid;
+    place-items: center;
+    height: 75vh; 
+    width: 100%; 
+}
+
+.eventos__bloque {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 90%; /* Ajusta según el diseño deseado */
+    background-color: #6802C1;
+}
+
+.eventos__contenedor {
+    padding: 3rem 0rem 3rem 3rem;
+    width: 55%;
+}
+.eventos__titulo{
+    border-bottom: 1px solid #F8F4FD;
+    padding-bottom: 2rem ;
+    color: #F8F4FD;
+    font-family:'Monserrat', sans-serif;
+}
+.eventos__parrafo{
+    margin-top: 2rem;
+    color: #F8F4FD;
+    font-family: 'Open Sans', sans-serif;
+}
+.btn__eventos{
+    margin-top: 2rem ;
+    padding: 11px 20px;
+    width: 260px;
+}
+
+.img__eventos {
+    height: auto;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2)); /* Sombra con filtro drop-shadow */
+}
+
+.info__contenedor{
+    padding: 3rem 0;
+    margin: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 2rem;
+}
+.info__texto{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+.info__subtexto{
+    padding-top: 0.8 rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-style: bolt;
+    font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+    .contenedorMixto {
+        width: 23%;
+    }
+}

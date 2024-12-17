@@ -1,0 +1,6 @@
+.fondo {
+    background-image: url('../img/eventosFondo.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 650px;
+}
